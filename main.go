@@ -51,6 +51,8 @@ func realMain() error {
 	mux := http.NewServeMux()
 
 	// TODO: ここから実装を行う
+	//mux.Handle("/", http.HandlerFunc(hello))
+	http.ListenAndServe(port, mux)
 
 	return nil
 }
